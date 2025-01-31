@@ -14,10 +14,11 @@ int Getline(char s[], int lim)
             last = i;
             isfirst = YES;
         }
-        else { if (c != ' ' && c != '\t') {
-            last = i + 1;
-            isfirst = NO;
-        }
+        else {
+            if (c != ' ' && c != '\t') {
+                last = i + 1;
+                isfirst = NO;
+            }
         }
     }
     if (c == '\n') {
